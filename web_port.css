@@ -1,0 +1,45 @@
+/*reset*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #CEE0FC;
+}
+
+/*main*/
+header {
+    text-align: center;
+
+}
+
+header img {
+    width: 10%;
+    border-radius: 50%;
+    border:solid white 1px;
+}
+
+header p {
+    font-size: 20px;
+}
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+}
+
+.hover-content{
+    visibility: hidden;
+}
+
+
+
+.card:hover div {
+    visibility: visible;
+}
