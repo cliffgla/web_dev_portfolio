@@ -6,12 +6,22 @@
 body {
     margin: 0;
     background-color: #CEE0FC;
+    font-family: "Raleway", sans-serif;
 }
 
 /*main*/
 header {
     text-align: center;
 
+
+}
+
+header h1 {
+    font-weight: 500;
+}
+
+header p {
+    font-weight: 100;
 }
 
 header img {
@@ -28,19 +38,32 @@ main {
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    /*grid-gap: 1rem;*/
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
     text-align: center;
+    /*justify-items: center;*/
 }
 
+.card {
+    margin: 1em;
+}
 .hover-content{
     visibility: hidden;
+    width: 100%;
+    height: 100%;
+
 }
 
+
+
+
 .card div {
-    height: 300px;
+    /*height: 1;*/
     /*transform: translateY(-.5em);*/
+    /*width: 80%;*/
+
 }
 
 .card:hover div {
@@ -56,6 +79,7 @@ main {
 #photo-port {
     background-image: url("img/photo-port.png");
     background: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -63,4 +87,17 @@ main {
 #magazine {
     background-image: url("img/magazine.png");
     background: cover;
+    background-repeat: no-repeat;
+}
+
+#campaign {
+    background-image: url("img/campaign.png");
+    background: cover;
+    background-repeat: no-repeat;
+}
+
+#photo-edit {
+    background-image: url("img/photo-edit.png");
+    background: cover;
+    background-repeat: no-repeat;
 }
