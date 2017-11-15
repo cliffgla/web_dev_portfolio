@@ -33,17 +33,18 @@ header img {
 header p {
     font-size: 20px;
 }
-main {
+.wrapper {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     /*grid-gap: 1rem;*/
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 300));
+    /*grid-auto-columns: 400px;*/
     grid-auto-rows: 300px;
     text-align: center;
-    /*justify-items: center;*/
+    justify-items: center;
 }
 
 .card {
@@ -57,14 +58,6 @@ main {
 }
 
 
-
-
-.card div {
-    /*height: 1;*/
-    /*transform: translateY(-.5em);*/
-    /*width: 80%;*/
-
-}
 
 .card:hover div {
     visibility: visible;
@@ -80,7 +73,9 @@ main {
     background-image: url("img/photo-port.png");
     background: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 
 
@@ -88,16 +83,40 @@ main {
     background-image: url("img/magazine.png");
     background: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 #campaign {
     background-image: url("img/campaign.png");
     background: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 #photo-edit {
     background-image: url("img/photo-edit.png");
     background: cover;
     background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width:768px) {
+    #magazine {
+        background-image: url("img/magazine.png");
+        background: cover;
+        background-repeat: no-repeat;
+    }
+
+    #campaign {
+        background-image: url("img/campaign.png");
+        background: cover;
+        background-repeat: no-repeat;
+    }
+
+    #photo-edit {
+        background-image: url("img/photo-edit.png");
+        background: cover;
+        background-repeat: no-repeat;
+    }
+
 }
